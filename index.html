@@ -1,70 +1,231 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=640">
+    <!--site css-->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="stylesheets/site.min.css?v3" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js"></script>
+    <script src="javascripts/respond.min.js"></script>
+    <![endif]-->
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>递宏在线</title>
+    <style rel="stylesheet">
+        .cat_info .thumbnail{
+            padding: 0px;
+            text-align: left;
+        }
+        .cat_info .thumbnail h4{
+            background: #E8E8E8;
+            font-size: 12px;
+            line-height: 26px;
+            height: 26px;
+            display: block;
+            margin: 0px;
+            text-indent: 10px;
+            font-weight: normal;
+        }
+        .cat_info .thumbnail h4 .title{
+            float: left;
+        }
+        .cat_info .thumbnail h4 .more{
+            float: right;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        .cat_info .thumbnail .caption ul{
+            float: left;
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        } .cat_info .thumbnail .caption ul li .title a{
+            height: 25px;
+            text-indent: 10px;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body class="home-template">
+<!--nav bar start-->
+<div class="navbar navbar-inverse navbar-fixed-top">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Zhangdihong.github.io by zhangdihong</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/zhangdihong">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>欢迎光临寒舍</h1>
-            <h2>让博客飞一会儿吧</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>
-<a name="zhangdihonggithubio" class="anchor" href="#zhangdihonggithubio"><span class="octicon octicon-link"></span></a>zhangdihong.github.io</h1>
-
-<p>让博客飞一会儿吧</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/zhangdihong">zhangdihong</a> can be found on <a href="https://github.com/zhangdihong">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
+</div>
+<!--nav bar end-->
+<!--index picture show  start-->
+<div class="jumbotron masthead">
+    <div class="container">
+        <h1>欢迎来张小娃博客</h1>
+        <h2>似是而非、似事而非、事实而非、为中国IT技术崛起而工作</h2>
     </div>
+</div>
+<!--index picture show  end-->
+<div class="bc-social">
+        <div class="container">
+                <ul class="bc-social-buttons">
+                    <li class="social-forum"><a class="" target="_blank" title="github交流社区" href="http://github.com/zhangdihong">
+                        <i class="fa fa-github-alt"></i>
+                        Github交流
+                    </a></li>
+                    <li class="social-weibo">
+                        <a target="_blank" title="新浪微博" href="http://weibo.com/u/3506739963">
+                            <i class="fa fa-weibo"></i>
+                            新浪微博：@一腿码
+                        </a>
+                    </li>
+                </ul>
+        </div>
+</div>
+<!--skill module start-->
+<div class="container projects">
+<div class="projects-header page-header">
+    <h2>互联网web技术分享</h2>
+    <p>提升你的web开发技术 - 从这里开始！</p>
+</div>
+   <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+            <div class="thumbnail">
+                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+                <div class="caption">
+                    <ul>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                        <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+           <div class="thumbnail">
+               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+               <div class="caption">
+                   <ul>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >字符串string的妙用</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >正则表达式的秘密</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >再探java8 新特性集中营</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                       <li><div class="title"><a href="javascript:;" target="_blank" >小议注解的指导路线</a></div></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!--skill module end-->
+<div class="container">
+    <footer class="footer">
+        <span class="col-xs-6">
+          <span class="">
+            <p>Projects by <a href="https://github.com/zhangdihong">zhangdihong</a> can be found on <a
+                    href="https://github.com/zhangdihong">GitHub</a></p>
+          </span>
+          <span class=""></span>
+          <span class=""></span>
+        </span>
 
-    
-  </body>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class=""></span>
+    </footer>
+</div>
+</body>
+<script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
 </html>
