@@ -18,13 +18,26 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <title>递宏在线</title>
     <style rel="stylesheet">
-        .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
-        .clearfix:after{clear:both;}
-        .cat_info .thumbnail{
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .cat_info .thumbnail {
             padding: 0px;
             text-align: left;
         }
-        .cat_info .thumbnail h4{
+
+        .cat_info .thumbnail h4 {
             background: #E8E8E8;
             font-size: 12px;
             line-height: 26px;
@@ -34,290 +47,622 @@
             text-indent: 10px;
             font-weight: normal;
         }
-        .cat_info .thumbnail h4 .title{
+
+        .cat_info .thumbnail h4 .title {
             float: left;
             font-size: 14px;
         }
-        .cat_info .thumbnail h4 .more{
+
+        .cat_info .thumbnail h4 .more {
             float: right;
             margin-right: 10px;
             font-size: 12px;
         }
-        .cat_info .thumbnail .caption ul{
+
+        .cat_info .thumbnail .caption ul {
             float: left;
-            margin-left:-25px;
+            margin-left: -25px;
         }
-        .cat_info .thumbnail .caption ul li .title a{
+
+        .cat_info .thumbnail .caption ul li .title a {
             height: 25px;
             text-indent: 10px;
             line-height: 2em;
-            margin-left:-20px;
+            margin-left: -18px;
         }
-        .cat_info .thumbnail .caption ul li .date{
+
+        .cat_info .thumbnail .caption ul li .date {
             float: right;
             color: #969696;
             height: 25px;
             line-height: 25px;
-            margin-right:-21px;
+            margin-right: -21px;
         }
     </style>
 </head>
 <body class="home-template">
 <!--nav bar start-->
 <div class="navbar navbar-inverse navbar-fixed-top">
-
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="javascript:viod(0)"><img src="images/indx-title.png"/></a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a  href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">前端HTML开发技术<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href="/list/DIV+CSS.html" target="_blank">DIV+CSS</a></li>
+                    <li><a href="/list/html.html" target="_blank">HTML</a></li>
+                    <li><a href="/list/regix.html" target="_blank">正则</a></li>
+                    <li><a href="/list/js&jQuery.html" target="_blank">JS&JQuery</a></li>
+                    <li><a href="/list/fontTool.html" target="_blank">前端工具</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                    <a  href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">后端JAVA开发技术<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/list/DIV+CSS.html" target="_blank">DIV+CSS</a></li>
+                        <li><a href="/list/html.html" target="_blank">HTML</a></li>
+                        <li><a href="/list/regix.html" target="_blank">正则</a></li>
+                        <li><a href="/list/js&jQuery.html" target="_blank">JS&JQuery</a></li>
+                        <li><a href="/list/fontTool.html" target="_blank">前端工具</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a  href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Web前后端开发工具<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/list/DIV+CSS.html" target="_blank">DIV+CSS</a></li>
+                        <li><a href="/list/html.html" target="_blank">HTML</a></li>
+                        <li><a href="/list/regix.html" target="_blank">正则</a></li>
+                        <li><a href="/list/js&jQuery.html" target="_blank">JS&JQuery</a></li>
+                        <li><a href="/list/fontTool.html" target="_blank">前端工具</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a  href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">业界资讯<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/list/DIV+CSS.html" target="_blank">DIV+CSS</a></li>
+                        <li><a href="/list/html.html" target="_blank">HTML</a></li>
+                        <li><a href="/list/regix.html" target="_blank">正则</a></li>
+                        <li><a href="/list/js&jQuery.html" target="_blank">JS&JQuery</a></li>
+                        <li><a href="/list/fontTool.html" target="_blank">前端工具</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a  href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">IT人员的生活</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <!--nav bar end-->
 <!--index picture show  start-->
 <div class="jumbotron masthead">
     <div class="container">
-        <h1>欢迎来张小娃博客</h1>
+        <h1>欢迎光临寒舍</h1>
+
         <h2>似是而非、时事而非、事实而非、为中国IT技术崛起而工作</h2>
     </div>
 </div>
 <!--index picture show  end-->
 <div class="bc-social">
-        <div class="container">
-                <ul class="bc-social-buttons">
-                    <li class="social-forum"><a class="" target="_blank" title="github交流社区" href="http://github.com/zhangdihong">
-                        <i class="fa fa-github-alt"></i>
-                        Github交流社区
-                    </a></li>
-                    <li class="social-weibo">
-                        <a target="_blank" title="新浪微博" href="http://weibo.com/u/3506739963">
-                            <i class="fa fa-weibo"></i>
-                            新浪微博：@一腿码
-                        </a>
-                    </li>
-                </ul>
-        </div>
+    <div class="container">
+        <ul class="bc-social-buttons">
+            <li class="social-forum"><a class="" target="_blank" title="github交流社区"
+                                        href="http://github.com/zhangdihong">
+                <i class="fa fa-github-alt"></i>
+                Github交流社区
+            </a></li>
+            <li class="social-weibo">
+                <a target="_blank" title="新浪微博" href="http://weibo.com/u/3506739963">
+                    <i class="fa fa-weibo"></i>
+                    新浪微博：@一腿码
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 <!--skill module start-->
 <div class="container projects">
 <div class="projects-header page-header">
     <h2>JavaWeb技术分享</h2>
+
     <p>提升你的web开发技术 - 从这里开始！</p>
 </div>
-   <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">HTML</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - wbr" target="_blank" >HTML元素 - wbr</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - var" target="_blank" >HTML元素 - var</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - ul" target="_blank" >HTML元素 - ul</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - u" target="_blank" >HTML元素 - u小</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - tr" target="_blank" >HTML元素 - tr</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;" title="HTML元素 - tt" target="_blank" >再探java8 新特</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">HTML</span><a href="" class="more">more>></a></h4>
 
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-           <div class="thumbnail">
-               <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-               <div class="caption">
-                   <ul>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                       <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </div>
-    <div class="projects-header page-header">
-        <h2>IT人员的生活</h2>
-        <p>无论你是程序员、美工、营销还是其他看似枯燥的行业，只要你热爱生活，那么你就会很快乐。</p>
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - wbr" target="_blank">HTML元素 -
+                            wbr</a><span class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - var" target="_blank">HTML元素 -
+                            var</a><span class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - ul" target="_blank">HTML元素 -
+                            ul</a><span class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - u" target="_blank">HTML元素 -
+                            u小</a><span class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - tr" target="_blank">HTML元素 -
+                            tr</a><span class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" title="HTML元素 - tt" target="_blank">再探java8
+                            新特</a><span class="date">[10-22]</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
-            <div class="thumbnail">
-                <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
-                <div class="caption">
-                    <ul>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >字符串string的妙用</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >正则表达式的秘密</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >再探java8 新特性集中营</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                        <li class="col-xs-12"><div class="title"><a href="javascript:;"  target="_blank" >小议注解的指导路线</a><span class="date">[10-22]</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="projects-header page-header">
+    <h2>IT人员的生活</h2>
+
+    <p>无论你是程序员、美工、营销还是其他看似枯燥的行业，只要你热爱生活，那么你就会很快乐。</p>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 cat_info">
+        <div class="thumbnail">
+            <h4><span class="title">java</span><a href="" class="more">more>></a></h4>
+
+            <div class="caption">
+                <ul>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">字符串string的妙用</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">正则表达式的秘密</a><span
+                                class="date">[10-22]</span></div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">再探java8 新特性集中营</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12">
+                        <div class="title"><a href="javascript:;" target="_blank">小议注解的指导路线</a><span class="date">[10-22]</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
 </div>
 <!--skill module end-->
 <div class="container">
@@ -338,4 +683,9 @@
 </body>
 <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 </html>
